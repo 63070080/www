@@ -27,13 +27,13 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="www.google.com">Delete</a> <a href="www.google.com">Update</a></td>
+    <td><a href="www.google.com" role="button">Delete</a> <a href="www.google.com" role="button">Update</a></td>
   </tr>
 <?php
 }
 ?>
 </table>
-<a href="https://testatjapan.azurewebsites.net/form.html">Add</a>
+<a href="https://testatjapan.azurewebsites.net/form.html" role="button">Add</a>
 <?php
 mysqli_close($conn);
 ?>
