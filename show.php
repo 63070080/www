@@ -31,7 +31,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<input type="submit" formaction="https://testatjapan.azurewebsites.net/form.html">
+<a href="https://testatjapan.azurewebsites.net/form.html">Add</a>
 <?php
 mysqli_close($conn);
 ?>
