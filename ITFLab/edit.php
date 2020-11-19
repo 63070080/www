@@ -48,8 +48,8 @@
 								<input type="text" name="link" value="<?php echo $data['Link']; ?>" class="form-control">
 							</div>
 							<div class="text-center">
-								<button type="submit" class="btn btn-sm btn-warning my-3 font-weight-bold">SAVE</button>
-								<a class="btn btn-sm btn-light my-3" href="index.php">CANCLE</a>
+								<button type="submit" class="btn btn-sm btn-success my-3 font-weight-bold">SAVE</button>
+								<a class="btn btn-sm btn-light my-3" href="index.php">CANCEL</a>
 							</div>
 						</form>
 					</div>
