@@ -1,5 +1,8 @@
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <title>ITF Lab</title>
 </head>
 <body>
@@ -27,7 +30,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="del.php" id="<?php echo $Result['ID'];?>">Delete</a> <a href="www.google.com" role="button">Update</a></td>
+    <td><a href="del.php" id="<?php echo $Result['ID'];?>">Delete</a> 
+    <a href="www.google.com" role="button">Update</a></td>
   </tr>
 <?php
 }
