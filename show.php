@@ -27,7 +27,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="www.google.com" role="button">Delete</a> <a href="www.google.com" role="button">Update</a></td>
+    <td><a href="del.php" id="<?php echo $Result['ID'];?>">Delete</a> <a href="www.google.com" role="button">Update</a></td>
   </tr>
 <?php
 }
