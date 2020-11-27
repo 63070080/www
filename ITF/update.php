@@ -33,7 +33,7 @@
 								echo "EDIT SUCCESS";
 							}
 							else {
-								echo "FAILED TO EDIT";
+								echo "FAILED TO EDIT $id $product $price $discount $total" ;
 							}
 						?>
 						</h2>
