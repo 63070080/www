@@ -3,7 +3,7 @@
 
 	$id = $_GET['Id'];
 
-	$sql = 'SELECT * FROM product WHERE ID = '.$id.'';
+	$sql = 'SELECT * FROM product WHERE Id = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
 		header('Location: show.php');
