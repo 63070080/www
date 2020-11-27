@@ -6,7 +6,7 @@
 	$sql = 'SELECT * FROM product WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
-		header('Location: index.php');
+		header('Location: show.php');
 	}
 	else {
 		$data = mysqli_fetch_assoc($query);
@@ -34,7 +34,8 @@
 							<div class="col-6"><h1 class="text-monospace">Edit</h1></div>
 						</div>
 						<form action="update.php" method="post">
-							<input type="text" name="id" value="<?php echo $data['Id']; ?>" class="form-control d-none" required>
+                            <input type="text" name="id" value="<?php echo $data['Id']; ?>" class="form-control d-none" required>
+                            <input type="text" name="product" value="<?php echo $data['Product']; ?>" class="form-control d-none" required>
 							<div class="form-group">
 								<label>Price</label>
 								<textarea name="price" class="form-control" rows="5" required><?php echo $data['Price']; ?></textarea>

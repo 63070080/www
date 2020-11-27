@@ -1,12 +1,13 @@
 <?php
-	$conn = mysqli_connect('data-tanapong.mysql.database.azure.com', 'nutgod@data-tanapong', 'nut7godalot9?', 'ITFLab');
-
+    $conn = mysqli_connect('data-tanapong.mysql.database.azure.com', 'nutgod@data-tanapong', 'nut7godalot9?', 'ITFLab');
+    
+    $product = $_POST['product'];
 	$price = $_POST['price'];
     $discount = $_POST['discount'];
     $total = $price - $price*$discount/100;
 	$id = $_POST['id'];
 
-	$sql = 'UPDATE product SET Price = "'.$price.'", Discount = "'.$discount.', Total = "'.$total.'" WHERE ID = '.$id.'';
+    $sql = 'UPDATE product SET Product = "'.$product.'", Price = "'.$price.'", Discount = "'.$discount.', Total = "'.$total.'" WHERE ID = '.$id.'';
 ?>
 <!DOCTYPE html>
 <html>
