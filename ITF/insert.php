@@ -7,7 +7,7 @@
 	$product = $_POST['product'];
 	$price = $_POST['price'];
     $discount = $_POST['discount'];
-    $total = $price - $price*$discount/100
+    $total = $price - $price*$discount/100;
 	$sql = "INSERT INTO product (Product, Price, Discount, Total) VALUES ('$product', '$price', '$discount', '$total')";
 ?>
 <!DOCTYPE html>
