@@ -45,7 +45,7 @@
 										while($Result = mysqli_fetch_array($res)) {
 									?>
 									<tr class="table-info">
-										<a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
+										<td><a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
 										<td><?php echo $Result['Product'];?></td>
 										<td><?php echo $Result['Price'];?></td>
                                         <td><?php echo $Result['Discount'];?></td>
