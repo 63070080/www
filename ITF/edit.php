@@ -6,7 +6,7 @@
 	$sql = 'SELECT * FROM product WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
-		header('Location: show.php');
+		header('Location: index.php');
 	}
 	else {
 		$data = mysqli_fetch_assoc($query);
